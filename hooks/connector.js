@@ -56,7 +56,7 @@ export function useWallet(){
     });
   }, []);
 
-  function connect(wallet: any) {
+  function connect(wallet) {
     void activate(wallet, onError);
     const w = wallets.find((w) => w.connector === wallet);
     setConnectedWallet(w);

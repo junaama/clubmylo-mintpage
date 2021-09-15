@@ -1,8 +1,23 @@
+# Commissioned Mint Page for Club Mylo
+
+Created using Next.js, Typescript, TailwindCSS, HeadlessUI, web3, usedApp
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+First, edit `.env` and update NEXT_PUBLIC_INFURA_ID with your infura private id
+
+Second, to test on the Rinkeby network change line 48 in `pages/index.tsx` to
+
+```
+if (chainId !== 4) {
+    alert("Connect to the Rinkeby testnet!");
+    return;
+
+```
+
+Finally, run the development server:
 
 ```bash
 npm run dev
