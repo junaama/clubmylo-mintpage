@@ -6,9 +6,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, edit `.env` and update NEXT_PUBLIC_INFURA_ID with your infura private id
 
-Second, to test on the Rinkeby network change line 48 in `pages/index.tsx` to
+First, `git clone https://github.com/junaama/clubmylo-mintpage.git`
+
+Second, `npm install or yarn`
+
+Then, Edit `.env` and update NEXT_PUBLIC_INFURA_ID with your infura private id
+
+Next, to test on the Rinkeby network change line 48 in `pages/index.tsx` to
 
 ```
 if (chainId !== 4) {
